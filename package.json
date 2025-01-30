@@ -1,15 +1,32 @@
 {
-  "name": "JavaScriptCodes",
+  "name": "javascriptcodes",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "jest"
   },
   "devDependencies": {
     "prettier": "^3.3.1",
     "vite": "^5.1.6"
-  }
+  },
+  "dependencies": {
+    "jest": "^29.7.0",
+    "prompt-sync": "^4.2.0"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ighoEmmanuel/JavaScript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ighoEmmanuel/JavaScript/issues"
+  },
+  "homepage": "https://github.com/ighoEmmanuel/JavaScript#readme",
+  "description": ""
 }

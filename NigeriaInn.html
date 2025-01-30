@@ -2,9 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Niger Inn</title>
+  <style>
+      body {
+          font-family: Arial, sans-serif;
+          text-align: center;
+          margin-top: 50px;
+      }
+      img {
+          width: 700px;
+          height: auto;
+          border-radius: 10px;
+          margin-bottom: 10px;
+      }
+      input, button {
+          font-size: 16px;
+          padding: 10px;
+          margin-top: 10px;
+      }
+  </style>
 </head>
 <body>
-$END$
+<!-- Image for Niger Inn -->
+<img  style="float: left" src="imag.jpg" height="452" width="700" />
+
+
+<!-- Main Heading -->
+<h1>Welcome to Niger Inn</h1>
+<p>A place where you're 100% safe.</p>
+
+<!-- Input Field for User' -->
+<label for="nameInput">Enter your name:</label>
+<input type="text" id="nameInput" placeholder="Your name">
+
+<!-- Submit Button -->
+<button id="submitButton">Submit</button>
+
+<!-- Area to Display the Response -->
+<p id="response"></p>
+
+<script>
+  // Find elements on the page
+  const nameInput = document.getElementById("nameInput"); // Input field
+  const submitButton = document.getElementById("submitButton"); // Button
+  const response = document.getElementById("response"); // Paragraph to display the result
+
+  // Add an event listener to the button
+  submitButton.addEventListener("click", function() {
+    // Get the value from the input field
+    const userName = nameInput.value.trim();
+
+    // Display a personalized message if the user enters a name
+    if (userName) {
+      response.innerText = `Welcome, ${userName}, to Niger Inn!`;
+    } else {
+      // Show a generic message if no name is entered
+      response.innerText = "Welcome to Niger Inn!";
+    }
+  });
+</script>
 </body>
 </html>
